@@ -9,6 +9,11 @@
             "src": "/(.*)",
             "dest": "djangobackend2/wsgi.py"
         }
+    ],
+    "REWRITES":[
+        {
+            "SOURCE":"/(.*)","DESTINATION":"/"
+        }
     ]
     
     
