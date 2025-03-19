@@ -1,24 +1,13 @@
 {
     "builds": [{
-        "src": "djangobackend2/wsgi.py",
+        "src": "djangobackend2/asgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "djangobackend2/wsgi.py"
-        }
-    ],
-    "REWRITES":[
-        {
-            "SOURCE":"/(.*)","DESTINATION":"/"
+            "dest": "djangobackend2/asgi.py"
         }
     ]
-    
-    
-    
-
-    
-
 }
